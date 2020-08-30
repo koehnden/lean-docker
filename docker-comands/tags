@@ -1,0 +1,7 @@
+# tag naming convention
+-t <your docker id>/<project name>:version
+
+# example
+-t stephengrider/redis:lastest
+
+
