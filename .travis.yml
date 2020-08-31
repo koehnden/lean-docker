@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t koehnden/frontend -f Dockerfile.dev .
+  - docker build -t koehnden/frontend -f ./frontend/Dockerfile.dev ./frontend
 
 script:
   - docker run -e CI=true koehnden/frontend/ npm run test
