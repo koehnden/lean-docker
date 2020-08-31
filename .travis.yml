@@ -6,7 +6,7 @@ before_install:
   - docker build -t koehnden/frontend -f ./frontend/Dockerfile.dev ./frontend
 
 script:
-  - docker run -f ./frondent/Dockerfile -e CI=true koehnden/frontend npm run test
+  - docker run -f ./frontend/Dockerfile -e CI=true koehnden/frontend npm run test
 
 deploy:
   provider: elasticbeanstalk
